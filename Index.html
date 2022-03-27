@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Portifólio</h1>
+      <h2>por Marcelo Henrique Vieira de Abreu</h2>
+      <nav>
+        <ul>
+          <li><a href="sobre.html" target="_blank">Sobre</a>
+        </ul>
+       </nav>
+    </header>
+    <main>
+      <h1>O que você verá nesse site?</h1>
+      <p>nesse site você irá ver as minhas habilidades, ou seja, você ira ver meu portifólio</p>
+      <h1>Habilidades</h1>
+       <ul>
+         <li><a href="#imagem" target="_self">Edição de imagem</a></li>
+         <li><a href="#video" target="_self">Edição de video</a></li>
+         <li><a href="#audio" target="_self">Edição de áudio</a></li>
+         <li><a href="#planilhas" target="_self">Planilhas</a></li>
+       </ul>
+        <article id="imagem">
+        <h2>Edição de imagem</h2>
+          <figure id="macho">
+           <img id="img-depois" src="minha-imagem-editada.jpg">
+            <img onclick="troca()" onmouseout="trocas()" id="img-antes" src="imagem-sem-edicao.jpg">
+
+            <figcaption id="texto">Antes</figcaption>
+          </figure>
+        </article>
+        
+       <article id="video"  >
+         <h2>Edição de video</h2>
+         <video width="100%" controls="controls" poster="poster.jpg">
+           <source src="edit-marcelohenri.mp4" type="video/mp4"/>
+         </video>
+       </article>
+       <article id="audio">
+         <h2>Edição de áudio</h2>
+         <audio id="ad" controls="controls">
+           <source src="musica.mp3" type="audio/mp3"/>
+         </audio>
+         <p>Produção de áudio estruturada no aplicativo  <strong> FL Studio Mobile</strong></p>
+       </article>
+       <article id="planilhas">
+         <h2>Planilhas</h2>
+         
+         <h4><a href="https://docs.google.com/spreadsheets/d/1XthVozt7sQZFcMR5bcQj35TlWZdz13o1kCY7jXHzah8/edit?usp=drivesdk">Google Planilhas </a></h4>
+         <p>Demonstração de Planilhas no aplicativo de Planilhas do Google </p>
+       </article>
+    </main>
+    <footer>
+      <p>todos os direitos reservado a Marcelo Henrique Vieira De Abreu</p>
+      </footer>
+  </body>
+</html>
