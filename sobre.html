@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
@@ -9,6 +10,7 @@
        height:100vh;
      }
    </style>
+    
   </head>
   <body>
     <header>
@@ -22,8 +24,19 @@
     </header>
     <main>
      <article id="dis">
-      <p>Eu <strong>Marcelo Henrique</strong> sou um estudante de 16 anos que fez isso tudo pelo celular, tudo que coloquei nesse site é o que eu considero aceitável, mas tenho mais estudos em outras áreas como Python,php e java não as coloquei porquê estou em um nível bem básico.</p>
-      <p> Espero que tenha gostado do que viu e obrigado pela atenção </p>
+      <p>Eu <strong>Marcelo Henrique</strong> sou um estudante de <span id="id"></span> anos que fez isso tudo pelo celular, tudo que coloquei nesse site é o que eu considero aceitável, mas tenho mais estudos em outras áreas como Python,php e java não as coloquei porquê estou em um nível bem básico.</p>
+      <script>
+
+      var id= document.getElementById("id")
+
+      var an = new Date();
+
+      var hj= an.getFullYear();
+
+      id.innerHTML=`${hj-2005} `;
+
+    </script>
+       <p> Espero que tenha gostado do que viu e obrigado pela atenção </p>
       <p>Contato:<br>
 marcelohenriquevieiradeabreu10<wbr>@gmail.com</p>
      </article>
